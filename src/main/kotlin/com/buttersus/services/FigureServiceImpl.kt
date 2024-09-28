@@ -1,7 +1,7 @@
 package com.buttersus.services
 
+import com.buttersus.exceptions.BadFigureException
 import com.buttersus.exceptions.BadPropertyException
-import com.buttersus.exceptions.WrongOperationTypeException
 import com.buttersus.figures.*
 import kotlin.math.*
 
@@ -14,7 +14,7 @@ object FigureServiceImpl : FigureService {
         when (figure.lowercase()) {
             "circle" -> figures.add(Circle(property))
             "square" -> figures.add(Square(property))
-            else -> throw WrongOperationTypeException(figure)
+            else -> throw BadFigureException(figure)
         }
     }
 

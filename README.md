@@ -2,7 +2,7 @@
 
 Структура программы выглядит так:
 
-![](assets/screenshot.png)
+![screenshot](assets/screenshot.png)
 
 Запустить можно при помощи команды `./gradlew run`
 
