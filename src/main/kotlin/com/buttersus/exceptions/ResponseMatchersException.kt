@@ -1,3 +1,3 @@
 package com.buttersus.exceptions
 
-sealed class ResponseMatchersException(message: String) : Exception(message)
+sealed class ResponseMatchersException(message: String) : RuntimeException(message)
